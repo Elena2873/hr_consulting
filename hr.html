@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Карьерный консультант — кейсы</title>
+  <style>
+    :root{
+      --bg:#ffffff;
+      --text:#0f172a;
+      --muted:#475569;
+      --soft:#f6f7fb;
+      --border:#e5e7eb;
+      --accent:#2563eb;
+    }
+
+    *{box-sizing:border-box}
+
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      background:var(--bg);
+      color:var(--text);
+    }
+
+    .container{
+      max-width:1100px;
+      margin:auto;
+      padding:0 20px;
+    }
+
+    header{
+      padding:90px 0 50px;
+    }
+
+    .badge{
+      display:inline-block;
+      font-size:12px;
+      padding:6px 10px;
+      border:1px solid var(--border);
+      border-radius:999px;
+      color:var(--muted);
+      background:var(--soft);
+      margin-bottom:18px;
+    }
+
+    h1{
+      font-size:50px;
+      line-height:1.05;
+      margin:0 0 16px;
+      letter-spacing:-1px;
+    }
+
+    .sub{
+      font-size:18px;
+      color:var(--muted);
+      max-width:820px;
+    }
+
+    .stats{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:14px;
+      margin-top:30px;
+    }
+
+    .stat{
+      background:var(--soft);
+      border:1px solid var(--border);
+      padding:18px;
+      border-radius:14px;
+    }
+
+    .stat strong{
+      font-size:26px;
+      display:block;
+    }
+
+    section{
+      padding:40px 0;
+    }
+
+    h2{
+      font-size:26px;
+      margin-bottom:18px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:16px;
+    }
+
+    .card{
+      border:1px solid var(--border);
+      border-radius:16px;
+      padding:16px;
+      background:#fff;
+      display:flex;
+      gap:12px;
+      align-items:flex-start;
+    }
+
+    .card img{
+      width:42px;
+      height:42px;
+      border-radius:10px;
+      object-fit:cover;
+      border:1px solid var(--border);
+      flex-shrink:0;
+    }
+
+    .content{flex:1}
+
+    .title{
+      font-weight:600;
+      margin-bottom:6px;
+      font-size:14px;
+    }
+
+    .tags{
+      display:flex;
+      gap:6px;
+      flex-wrap:wrap;
+      margin-bottom:8px;
+    }
+
+    .tag{
+      font-size:10px;
+      padding:3px 7px;
+      background:var(--soft);
+      border:1px solid var(--border);
+      border-radius:999px;
+      color:var(--muted);
+    }
+
+    .text{
+      font-size:12.5px;
+      color:var(--muted);
+      line-height:1.6;
+    }
+
+    .featured{
+      grid-column:span 2;
+      background:linear-gradient(180deg,#ffffff,#f8fafc);
+    }
+
+    .testimonials{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:14px;
+    }
+
+    .quote{
+      background:var(--soft);
+      border:1px solid var(--border);
+      border-radius:16px;
+      padding:16px;
+      font-size:13px;
+      color:var(--muted);
+    }
+
+    footer{
+      padding:60px 0;
+      text-align:center;
+      color:#94a3b8;
+      font-size:13px;
+    }
+
+    @media(max-width:900px){
+      .grid{grid-template-columns:1fr;}
+      .featured{grid-column:auto;}
+      .stats{grid-template-columns:1fr 1fr;}
+      .testimonials{grid-template-columns:1fr;}
+      h1{font-size:36px;}
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+  <div class="badge">Карьерный консультант • Serbia / EU / International</div>
+  <h1>Помогаю получать офферы в Сербии и международных компаниях</h1>
+  <p class="sub">
+    Работа с карьерными переходами, релокацией и адаптацией под рынок. Основной фокус — стратегия поиска работы, а не только резюме.
+  </p>
+
+  <div class="stats">
+    <div class="stat"><strong>130+</strong>кейсов</div>
+    <div class="stat"><strong>85%</strong>офферы</div>
+    <div class="stat"><strong>+30–70%</strong>доход</div>
+    <div class="stat"><strong>EU + Serbia</strong>рынки</div>
+  </div>
+</header>
+
+<section>
+  <h2>Кейсы клиентов</h2>
+
+  <div class="grid">
+<div class="card featured">
+      <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad" />
+      <div class="content">
+        <div class="title">QA Engineer — переезд в Сербию и выход на EU рынок</div>
+        <div class="tags"><span class="tag">relocation</span><span class="tag">QA</span></div>
+        <div class="text">
+          Клиент переехал в Сербию без понимания локального рынка. Отправлял резюме в сербские и европейские компании, но не получал откликов.
+          Основная проблема заключалась в том, что CV было универсальным и не учитывало различия между рынками.
+          Мы начали с диагностики: разобрали, как его опыт воспринимается рекрутерами в ЕС и почему он не проходит первичный скрининг.
+          Затем сделали две версии резюме — под Сербию и под международные компании, переработали формулировки под ATS и подготовили сценарии интервью.
+          <br/><br/>
+          Результат: оффер от международной компании через 5 недель и приглашения на интервью от сербских работодателей.
+        </div>
+      </div>
+    </div>
+
+    <div class="card featured">
+      <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df" />
+      <div class="content">
+        <div class="title">Marketing Specialist — рост дохода в международной компании</div>
+        <div class="tags"><span class="tag">salary</span><span class="tag">EU</span></div>
+        <div class="text">
+          Клиент работал в маркетинге 3 года без роста дохода и без предложений от международных компаний.
+          Главная проблема — опыт был описан как набор задач, без измеримого влияния на бизнес.
+          Мы провели глубокий разбор проектов, выделили реальные бизнес-результаты и перевели их в KPI-формат.
+          Дополнительно перестроили позиционирование под европейский рынок, где важен impact и самостоятельность.
+          <br/><br/>
+          Результат: оффер в международной компании и рост дохода на 52%.
+        </div>
+      </div>
+    </div>
+
+    <div class="card"><img src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952" /><div class="content"><div class="title">Data Analyst — смена карьеры</div><div class="text">Клиент пришёл с разрозненным опытом из разных ролей. Не мог объяснить свою ценность работодателю. Мы структурировали опыт под аналитику, убрали нерелевантные задачи и сформировали единое позиционирование. Через 6 недель — оффер.</div></div></div>
+
+    <div class="card"><img src="https://images.unsplash.com/photo-1553877522-43269d4ea984" /><div class="content"><div class="title">Project Manager — 3 оффера</div><div class="text">Слабая конверсия откликов и отсутствие понимания позиционирования. После переработки стратегии поиска и подготовки к интервью клиент получил 3 оффера за 10 дней.</div></div></div>
+
+    <div class="card"><img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" /><div class="content"><div class="title">UX/UI Designer</div><div class="text">Портфолио не воспринималось работодателями. Мы переработали кейсы, добавили структуру задач и решений. Результат — 8 интервью.</div></div></div>
+
+    <div class="card"><img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb" /><div class="content"><div class="title">Backend Developer</div><div class="text">Резюме не проходило ATS фильтры. После структурирования и оптимизации — 6 интервью за неделю.</div></div></div>
+
+    <div class="card"><img src="https://images.unsplash.com/photo-1551836022-4c4c79ecde51" /><div class="content"><div class="title">HR Specialist</div><div class="text">Низкая конверсия откликов. После переработки позиционирования — рост откликов в 3 раза.</div></div></div>
+
+    <div class="card"><img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" /><div class="content"><div class="title">Finance Analyst</div><div class="text">Опыт был недооценён работодателями. После упаковки достижений — повышение до senior уровня.</div></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1551836022-f5d3b2f6f0a0" /><div class="content"><div class="title">Junior QA</div><div class="text">Отсутствие первого оффера. После структурирования CV и подготовки к интервью — оффер за 4 недели.</div></div></div>
+
+    <div class="card"><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c" /><div class="content"><div class="title">Product Owner</div><div class="text">Размытое позиционирование роли. После переработки стратегии — 2 оффера.</div></div></div>
+
+  </div>
+</section>
+
+<section>
+  <h2>Отзывы</h2>
+
+  <div class="testimonials">
+    <div class="quote">«После переезда в Сербию наконец понял, как адаптировать CV под EU рынок»</div>
+    <div class="quote">«Очень подробно разобрали мою ситуацию, стало понятно, почему не было откликов»</div>
+    <div class="quote">«Это не про резюме, а про стратегию карьеры»</div>
+    <div class="quote">«Оффер получил через 3 недели работы»</div>
+    <div class="quote">«Впервые увидел, как меня воспринимает рынок»</div>
+    <div class="quote">«Сильный упор на реальный результат»</div>
+  </div>
+
+</section>
+
+<section>
+  <h2>Анонимные сообщения клиентов</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330" />
+      <div class="content">
+        <div class="title">QA Engineer • Belgrade</div>
+        <div class="text">
+          <div style="background:#eef2ff;padding:12px;border-radius:14px;margin-bottom:8px;">
+            Спасибо большое 🙏<br/><br/>
+            Я реально уже думал, что проблема во мне, потому что 8 месяцев были только отказы.
+            После того как мы переделали CV под EU рынок и отдельно под Сербию — начали приходить интервью.
+          </div>
+          <div style="background:#dcfce7;padding:12px;border-radius:14px;max-width:90%;margin-left:auto;">
+            Вчера подписал оффер в международной компании.
+            Спасибо за стратегию и подготовку 🙌
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e" />
+      <div class="content">
+        <div class="title">Marketing Specialist • Remote EU</div>
+        <div class="text">
+          <div style="background:#eef2ff;padding:12px;border-radius:14px;margin-bottom:8px;">
+            До консультации у меня было ощущение, что опыт недостаточно хороший для международных компаний.
+            Оказалось, проблема была в том, как я его показывал.
+          </div>
+          <div style="background:#dcfce7;padding:12px;border-radius:14px;max-width:90%;margin-left:auto;">
+            Сегодня получила оффер с зарплатой сильно выше текущей.
+            Спасибо за помощь с позиционированием ❤️
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d" />
+      <div class="content">
+        <div class="title">Backend Developer • Serbia</div>
+        <div class="text">
+          <div style="background:#eef2ff;padding:12px;border-radius:14px;margin-bottom:8px;">
+            Я раньше просто отправлял одно и то же резюме везде.
+            После разбора стало понятно, почему ATS меня не пропускал.
+          </div>
+          <div style="background:#dcfce7;padding:12px;border-radius:14px;max-width:90%;margin-left:auto;">
+            За неделю получил 6 интервью.
+            Никогда раньше такого не было.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2" />
+      <div class="content">
+        <div class="title">UX/UI Designer • Relocation</div>
+        <div class="text">
+          <div style="background:#eef2ff;padding:12px;border-radius:14px;margin-bottom:8px;">
+Самое полезное было понять, как меня видят работодатели.
+            До этого я думала, что проблема в рынке.
+          </div>
+          <div style="background:#dcfce7;padding:12px;border-radius:14px;max-width:90%;margin-left:auto;">
+            После переработки портфолио и кейсов начали приглашать на интервью.
+            Уже второй этап в продуктовой компании 🚀
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  © Карьерный консультант • Анонимные кейсы
+</footer>
+
+</div>
+
+</body>
+</html>
